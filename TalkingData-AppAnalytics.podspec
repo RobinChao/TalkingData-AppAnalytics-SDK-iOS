@@ -6,7 +6,7 @@ Pod::Spec.new do |s|
   s.homepage         = "https://www.talkingdata.com"
   s.license          = { :type => "Copyright", :text => "LICENSE Copyright Beijing Tendcloud Tianxia Technology Co., Ltd. All rights reserved." }
   s.author           = { 'TalkingData' => 'support@tendcloud.com' }
-  s.source           = { :git => "https://github.com/TalkingData/TalkingData-AppAnalytics-SDK-iOS", :tag => "v#{s.version}" }
+  s.source           = { :git => "https://github.com/TalkingData/TalkingData-AppAnalytics-SDK-iOS.git", :tag => "v#{s.version}" }
 
   s.platform     = :ios
   s.requires_arc = false
