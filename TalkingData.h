@@ -1,6 +1,6 @@
 //
 //  TalkingData.h
-//  TalkingData Version 2.2.30
+//  TalkingData Version 2.2.31
 //
 //  Created by Biao Hou on 11-11-14.
 //  Copyright (c) 2011年 tendcloud. All rights reserved.
@@ -10,10 +10,10 @@
 
 // 以下枚举用于WatchApp页面追踪
 typedef enum {
-    TDPageTypeGlance = 1,
-    TDPageTypeNotification = 2,
-    TDPageTypeWatchApp = 3
-} TDPageType;
+    TDAAPageTypeGlance = 1,
+    TDAAPageTypeNotification = 2,
+    TDAAPageTypeWatchApp = 3
+} TDAAPageType;
 
 @interface TalkingData: NSObject
 
@@ -123,9 +123,9 @@ typedef enum {
  *  开始跟踪WatchApp某一页面（可选），记录页面打开时间
  建议在willActivate方法里调用
  *	@param 	pageName 	页面名称（自定义）
- *  @param  pageType    页面类型（TDPageType枚举类型）
+ *  @param  pageType    页面类型（TDAAPageType枚举类型）
  */
-+ (void)trackPageBegin:(NSString *)pageName withPageType:(TDPageType)pageType;
++ (void)trackPageBegin:(NSString *)pageName withPageType:(TDAAPageType)pageType;
 
 /**
  *	@method	trackPageEnd
@@ -151,8 +151,11 @@ typedef enum {
  */
 +(void)removeGlobalKV:(NSString*)key;
 
+// __iBeacon_start__
 + (void)setiBeaconEnabled:(BOOL)enable;
+// __iBeacon_end__
 
+// __push_start__
 /**
  *  @method setDeviceToken              设置DeviceToken
  *  @param  deviceToken                 从Apple获取的DeviceToken
@@ -167,4 +170,5 @@ typedef enum {
  */
 + (BOOL)handlePushMessage:(NSDictionary *)message;
 
+// __push_end__
 @end
