@@ -1,6 +1,6 @@
 //
 //  TalkingData.h
-//  TalkingData Version 2.2.35
+//  TalkingData Version 2.2.36
 //
 //  Created by Biao Hou on 11-11-14.
 //  Copyright (c) 2011年 tendcloud. All rights reserved.

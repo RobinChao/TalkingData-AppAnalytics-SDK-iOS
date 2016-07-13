@@ -1,7 +1,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TalkingData-AppAnalytics"
-  s.version          = "2.2.35"
+  s.version          = "2.2.36"
   s.summary          = "TalkingData AppAnalytics SDK for iOS"
   s.homepage         = "https://www.talkingdata.com"
   s.license          = { :type => "Copyright", :text => "LICENSE Copyright Beijing Tendcloud Tianxia Technology Co., Ltd. All rights reserved." }
